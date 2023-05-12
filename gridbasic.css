@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:1fr  1fr 1fr ;        /* jetli var 1fr lakhso tetla same size na box create thase. */
+            grid-template-rows: 100px;                  /* set kervi jaroori  nahitar size 0 rey*/
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div>collumn 1</div>
+        <div>collumn 2</div>                    <!--   ahia 3rd div mate lakhyu nathi, pan grid ma box karelo che etle eni jaga chutse  --> 
+    </div>
+    
+</body>
+</html>
