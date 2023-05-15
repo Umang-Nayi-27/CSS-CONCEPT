@@ -7,18 +7,30 @@
     <title>Document</title>
     <style>
         .container{
+            height: 1000px;                                         /* container ni height set keri*/
+            width: 1000px;                                          /* container ni width set keri */
             display: grid;
-            grid-template-columns:1fr  1fr 1fr ;        /* jetli var 1fr lakhso tetla same size na box create thase. */
-            grid-template-rows: 100px;                  /* set kervi jaroori  nahitar size 0 rey*/
+            grid-template-columns: 200px 200px 200px 200px ;        /* container ma collum no overview set keyro. , 200 px ni 4 collumn*/
+            grid-template-rows: 200px 200px 200px 200px 200px;      /* container ma row no overview set keri didho , 200 px ni 5 row*/
             background-color: aqua;
+            gap: 50px;                                              /* aa rows,collumn banne mate lagu pade */
+        }
+        
+        .item{
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
-    
-    <div class="container">
-        <div>collumn 1</div>
-        <div>collumn 2</div>                    <!--   ahia 3rd div mate lakhyu nathi, pan grid ma box karelo che etle eni jaga chutse  --> 
+
+    <div class="container">                        
+        <div class="item"></div>            <!-- aa badhi item che ee grid ma pella first row puri kerse pachi next row ma jase.-->
+        <div class="item"></div>                    
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
     </div>
     
 </body>
