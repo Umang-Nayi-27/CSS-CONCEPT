@@ -21,8 +21,10 @@
         }
 
         .item1{
-            grid-column-start: 1;`                              /* grid item che tene combine athva specific spacee ma keerva ... */
+            grid-column-start: 1;                              /* grid item che tene combine athva specific spacee ma keerva ... */
             grid-column-end: 3;                                 /* grid item ahia collum 1 thi start tahse ane collum3 per patse , measn 1 and 2 collumn combine thase */
+            /* grid-row-start: 1;
+               grid-row-end: 4; */ 
         }
     </style>
 </head>
