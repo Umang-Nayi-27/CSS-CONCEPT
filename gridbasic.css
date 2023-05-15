@@ -10,9 +10,10 @@
             height: 1000px;                                         /* container ni height set keri*/
             width: 1000px;                                          /* container ni width set keri */
             display: grid;
-            grid-template-columns: 200px 200px 200px 200px ;        /* container ma collum no overview set keyro. , 200 px ni 4 collumn*/
+            grid-template-columns: 200px 200px 200px 200px ;        /* container ma collum no overview set keyro. , 200 px ni 4 collumn */
             grid-template-rows: 200px 200px 200px 200px 200px;      /* container ma row no overview set keri didho , 200 px ni 5 row*/
-            background-color: aqua;
+            /* grid-template-colums : 1fr 1fr 1fr 1fr ;             /* fr -> fraction  , matlva ke 4 column ee container ma equal space ma gothvai jase*/ 
+            /* grud-template-rows : 1fr 1fr 1fr 1fr 1fr ;           /* 5 rows container ma equal space ma gothvai jase.*/
             gap: 50px;                                              /* aa rows,collumn banne mate lagu pade */
         }
         
