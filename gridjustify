@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 1000px;                                         /* container ni height set keri*/
+            width: 1000px;                                          /* container ni width set keri */
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px ;        /* container ma collum no overview set keyro. , 200 px ni 4 collumn*/
+            grid-template-rows: 200px 200px 200px 200px 200px;      /* container ma row no overview set keri didho , 200 px ni 5 row*/
+            background-color: aqua;
+            gap: 50px;                                              /* aa rows,collumn banne mate lagu pade */
+            
+            place-items: center;                                    /* place whole item in the center of griditem */
+            
+            /*justify-content: center;                              /* justify item  in horizontal way */
+            /*align-items: center;                                  /* justify item in vertical way*/
+        
+        }
+        
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+
+        .item1{
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">                        
+        <div class="item item1"> item1 </div>            <!-- aa badhi item che ee grid ma pella first row puri kerse pachi next row ma jase.-->
+        <div class="item">item2</div>                    
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
