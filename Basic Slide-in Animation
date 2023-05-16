@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container
+        {
+            height: 1000px;                                         /* container ni height set keri*/
+            width: 1000px;                                          /* container ni width set keri */
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px ;        /* container ma collum no overview set keyro. , 200 px ni 4 collumn*/
+            grid-template-rows: 200px 200px 200px 200px 200px;      /* container ma row no overview set keri didho , 200 px ni 5 row*/
+            background-color: aqua;
+            gap: 50px;                                              /* aa rows,collumn banne mate lagu pade */
+            place-items: center;                                    /* place whole item in the center of griditem */
+            /*justify-content: center;                              /* justify item  in horizontal way */
+            /*align-items: center;                                /* justify item in vertical way*/
+        }
+
+        .item
+        {
+            height: 100%;
+            width: 100%;
+            background-color: blue;
+            
+        }
+
+        .item1
+        {
+            background-color: yellow;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item2
+        {
+            background-color: violet;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            
+        }
+        .animation:hover{
+            transition-delay: 0.3s;
+            transition-duration: 1s;
+            background-color: blue;
+        }
+        .footer{
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-color: black;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            
+        }
+
+        @keyframes slidin{
+            from {
+                transform: translateX(-700px);
+             }
+            to{
+                transform: translateX(700px);
+            }
+        }
+        .animation{
+            
+            animation: slidin 3s ease-in-out 0.3s infinite ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">                        
+        <div class="item item1">item 1</div>            <!-- aa badhi item che ee grid ma pella first row puri kerse pachi next row ma jase.-->
+        <div class="item item2 "></div>                    
+        <div class="item "></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item footer">
+            <h1 class="animation">This is Animation </h1>
+        </div>
+    </div>
+</body>
+</html>
