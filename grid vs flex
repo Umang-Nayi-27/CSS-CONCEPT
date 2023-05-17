@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color:rgb(233, 247, 248) ;
+        }
+        /*this is the problem...when we set background image on body tag... and then we reduce the opacity of the background image .... aanathi badha ni opacity down thay... to avoid this and othe kind of problem wee use BEFORE AND AFTER*/
+        /*SOLUTIOn ::  aa solve kerva.. aapde header athva je koi bi pella hoy tena "before" ma background image set kerisu, cover nahi karisu.. ane z index -1 aapi daisu ane paachi opacity low keri daisu */
+        /*
+        body{
+            margin: 0px;
+            background-image: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-255379.jpg&fm=jpg);
+            background-size: cover;
+            opacity: 50%;
+            z-index: -1;
+        }
+        */
+
+        /*SOLUTIOn ::  aa solve kerva.. aapde header athva je koi bi pella hoy tena "before" ma background image set kerisu, cover nahi karisu.. ane z index -1 aapi daisu ane paachi opacity low keri daisu */
+        
+        .container1::before{
+            content: "";            /* aa line lakhvi j pade... to j before load thay*/
+            background:url(https://media.tenor.com/1zhBM28EdSYAAAAC/aesthetic.gif);
+            background-size: cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        .container1 {
+            font-family: 'Lobster', cursive;
+            font-family: 'PT Mono', monospace;
+            height: 100px;
+            width: 100%;
+            position: relative;
+            text-align: center;
+            display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .item{
+                margin: 0;
+            }
+            header{font-family: 'Lobster', cursive;
+            font-family: 'PT Mono', monospace;
+                color: black;
+                height: 60px;
+                width: 100%;
+                background-color: rgb(249, 230, 255);
+                display: grid;
+                grid-auto-flow: column;
+                
+                               
+                justify-content: center;
+                align-items: center;
+            }
+           a:hover{
+           
+            color:black;
+            font-size: 23px;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+           }
+            a{
+                margin-left: 50px;
+                text-decoration: none;
+            }
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container1">
+        <div class="item "> 
+            <p>
+                <span style="color:black;"><b> One Stop For </b></span>
+                <span style="color:purple;"><b>BLACKPINK</b></span>
+                <br>
+                <span style="color:black;"><b> In Your Area </b></span>
+            </p>       
+        </div>
+    </div>
+    <header>
+        
+            <a href="">Home</a>
+            <a href="">Music</a>
+            <a href="">Album</a>
+            <a href="">about us</a>
+    </header>
+
+</body>
