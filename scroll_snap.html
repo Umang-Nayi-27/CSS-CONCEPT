@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* scroll-snap-typoe :::;-> y mandatory, x mandatory, y proximity, x proximity ,both mandatory  ---> 
+        scroll-snap-align :: start end cenmter */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: sans-serif;
+            scroll-snap-type: y mandatory;
+            
+        }
+
+        div {
+            border-bottom: 1px solid white;
+            padding: 1rem;
+            height: 100vh;
+            scroll-snap-align: start;
+            scroll-behavior: smooth;
+            text-align: center;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: aqua;">
+        <h1>div One</h1>
+    </div>
+    <div style="background-color: black;">
+        <h1>div Two</h1>
+    </div>
+    <div style="background-color:greenyellow;">
+        <h1>div Three</h1>
+    </div>
+    <div style="background-color: indianred;">
+        <h1>div Four</h1>
+    </div>
+    <div style="background-color:khaki;">
+        <h1>div Five</h1>
+    </div>
+</body>
+
+</html>
