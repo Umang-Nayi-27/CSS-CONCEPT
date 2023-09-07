@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+  #playback{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #playback div{
+            display: inline-flex;
+            height: 50px;
+            width: 50px;
+            background-color: #80bfff;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+        #playback div:nth-child(1),
+        #playback div:nth-child(5)              /* Multiple child selection.....*/
+        {
+           background-color: #ddd;
+        }
+        #playback div:hover{
+            background-color:aquamarine;
+        }
+        #playback div:nth-child(3)              /* single child selection......*/
+        {
+            height: 80px;
+            width: 80px;
+        }
+  </style>  
+</head>
+<body>
+<div id="playback"  >
+            <div id="suffle">
+            <i class="fa-solid fa-shuffle"></i>
+            </div>
+            <div id="previous">
+            <i class="fa-solid fa-backward" ></i>
+            </div>
+            <div id="play">
+            <i class="fa-solid fa-play"></i>
+            </div>
+            <div id="next">
+            <i class="fa-solid fa-forward"></i>
+            </div>
+            <div id="repeat">
+            <i class="fa-solid fa-repeat"></i>
+            </div>
+</div>
+</body>
+</html>
