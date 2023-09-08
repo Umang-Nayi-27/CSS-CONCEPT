@@ -1,0 +1,90 @@
+<!--
+
+1. **Scrollbar** (continued):
+   - `-webkit-scrollbar-thumb-hover`: Styles the scrollbar thumb when hovered.
+   - `-webkit-scrollbar-thumb:horizontal`: Styles the horizontal scrollbar thumb.
+   - `-webkit-scrollbar-thumb:vertical`: Styles the vertical scrollbar thumb.
+   - `-webkit-scrollbar-corner:window-inactive`: Styles the corner of inactive scrollbars.
+   - `-webkit-scrollbar-corner:window-active`: Styles the corner of active scrollbars.
+
+2. **Input Fields** (continued):
+   - `-webkit-input-placeholder`: Styles the placeholder text inside input elements.
+   - `-webkit-input-placeholder-contrast`: Styles the placeholder text when there is high contrast.
+   - `-webkit-input-required`: Styles required input fields.
+   - `-webkit-input-optional`: Styles optional input fields.
+
+3. **Media Controls** (continued):
+   - `-webkit-media-controls-start-playback-button`: Styles the start playback button.
+   - `-webkit-media-controls-panel`: Styles the entire media controls panel.
+   - `-webkit-media-controls-toggle-closed-captions-button`: Styles the closed captions button.
+   - `-webkit-media-controls-toggle-closed-captions-button:active`: Styles the closed captions button when clicked.
+   - `-webkit-media-controls-current-time-display`: Styles the current playback time display.
+   - `-webkit-media-controls-mute-button`: Styles the mute button.
+   - `-webkit-media-controls-volume-slider-container`: Styles the volume slider container.
+   - `-webkit-media-controls-timeline-container`: Styles the timeline container.
+   - `-webkit-media-controls-fullscreen-button`: Styles the fullscreen button.
+
+4. **Range Input** (continued):
+   - `-webkit-slider-runnable-track:horizontal`: Styles the horizontal track of the slider.
+   - `-webkit-slider-runnable-track:vertical`: Styles the vertical track of the slider.
+   - `-webkit-slider-runnable-track:hover`: Styles the track when hovered.
+   - `-webkit-slider-runnable-track:disabled`: Styles the track when the input is disabled.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize WebKit Controls</title>
+    <style>
+        /* Customize the scrollbar thumb */
+        ::-webkit-scrollbar-thumb {
+            background-color: #555;
+        }
+
+        /* Style the input field */
+        input {
+            -webkit-appearance: none; /* Remove default styles */
+            -webkit-border-radius: 5px; /* Add border-radius */
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        /* Style the media controls panel */
+        ::-webkit-media-controls-panel {
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Style the play button */
+        ::-webkit-media-controls-play-button {
+            background-color: #555;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customized WebKit Controls Example</h1>
+
+    <!-- Scrollable content to demonstrate scrollbar -->
+    <div style="height: 300px; overflow: auto;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula tincidunt metus, non vehicula dolor venenatis a.</p>
+        <!-- ... more content ... -->
+    </div>
+
+    <!-- Customized input field -->
+    <input type="text" placeholder="Enter text">
+
+    <!-- Customized audio player -->
+    <audio controls>
+        <source src="your-audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
